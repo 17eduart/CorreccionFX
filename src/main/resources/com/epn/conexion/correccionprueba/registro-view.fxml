@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ComboBox?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="742.0"
+      fx:controller="com.epn.conexion.correccionprueba.controlador.RegistroController"
+      xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="316.0" layoutY="35.0" text="Registro de Usuarios" />
+      <Label layoutX="180.0" layoutY="76.0" text="Username" />
+      <Label layoutX="177.0" layoutY="112.0" text="Contraseña" />
+      <Label layoutX="177.0" layoutY="151.0" text="Correo Electronico" />
+      <Label layoutX="177.0" layoutY="190.0" text="Direccion" />
+      <Label layoutX="177.0" layoutY="229.0" text="Rol" />
+      <ComboBox fx:id="rol" layoutX="297.0" layoutY="225.0" prefWidth="150.0" />
+      <TextField fx:id="txt_username" layoutX="296.0" layoutY="72.0" />
+      <PasswordField fx:id="txt_password" layoutX="296.0" layoutY="108.0" />
+      <TextField fx:id="txt_correo" layoutX="297.0" layoutY="147.0" />
+      <TextField fx:id="txt_direccion" layoutX="297.0" layoutY="186.0" />
+      <Button fx:id="btn_registrarse" layoutX="249.0" layoutY="277.0" mnemonicParsing="false" text="Registrarse" onAction="#registrarse" />
+      <Button fx:id="btn_borrar" layoutX="399.0" layoutY="277.0" mnemonicParsing="false" text="Borrar" onAction="#borrar"/>
+   </children>
+</Pane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="483.0"
+      xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epn.conexion.correccionprueba.controlador.LoginController">
+   <children>
+      <Label layoutX="115.0" layoutY="108.0" text="Usuario" />
+      <Label layoutX="114.0" layoutY="160.0" text="Contraseña" />
+      <Label layoutX="140.0" layoutY="43.0" text="Login Aplicación Java FX">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_user" layoutX="223.0" layoutY="116.0" />
+      <PasswordField fx:id="txt_password" layoutX="223.0" layoutY="156.0" />
+      <Button fx:id="btn_registrarse" layoutX="180.0" layoutY="288.0" mnemonicParsing="false" text="Registrarse" onAction="#registrarse" />
+      <Button fx:id="btn_inicio"  layoutX="287.0" layoutY="288.0" mnemonicParsing="false"  text="Iniciar sesión" onAction="#iniciarSesion"/>
+      <Label layoutX="113.0" layoutY="220.0" text="Rol" />
+      <ComboBox fx:id="rol" layoutX="222.0" layoutY="195.0" prefWidth="150.0" />
+   </children>
+</Pane>
