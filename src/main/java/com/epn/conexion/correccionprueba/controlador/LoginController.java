@@ -60,7 +60,7 @@ public class LoginController {
 
     private void abrirOtraPantalla(){
         try {
-            FXMLLoader fxmlLoader =new FXMLLoader(HelloApplication.class.getResource("/com/epn/conexion/correccionprueba/hello-view.fxml"));
+            FXMLLoader fxmlLoader =new FXMLLoader(HelloApplication.class.getResource("/com/epn/conexion/correccionprueba/visualizar-view.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 600);
             Stage stage = (Stage)  txt_user.getScene().getWindow();
             stage.setTitle("Correccion Prueba");

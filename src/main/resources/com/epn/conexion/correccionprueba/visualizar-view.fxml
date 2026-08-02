@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/26"
+      fx:controller="com.epn.conexion.correccionprueba.controlador.InventoresController"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="375.0" layoutY="14.0" text="CRUD - Inventores" />
+        <Label layoutX="138.0" layoutY="37.0" text="Identificador: " />
+        <Label layoutX="138.0" layoutY="57.0" text="Nombre: " />
+        <Label layoutX="138.0" layoutY="93.0" text="Pais: " />
+        <Label layoutX="138.0" layoutY="132.0" text="Fecha de Nacimiento: " />
+        <Label layoutX="138.0" layoutY="174.0" text="Fecha de Falleciminento: " />
+        <Label layoutX="138.0" layoutY="217.0" text="Invento Principal: " />
+        <TextField fx:id="txt_id" layoutX="276.0" layoutY="53.0" />
+        <TextField fx:id="txt_nombre" layoutX="276.0" layoutY="53.0" />
+        <TextField fx:id="txt_pais" layoutX="276.0" layoutY="89.0" />
+        <TextField fx:id="txt_nacimiento" layoutX="276.0" layoutY="128.0" />
+        <TextField fx:id="txt_fallecimiento" layoutX="276.0" layoutY="170.0" />
+        <TextField fx:id="txt_invento" layoutX="276.0" layoutY="213.0" />
+        <Button fx:id="btn_añadir" layoutX="126.0" layoutY="268.0" mnemonicParsing="false" text="Añadir" onAction="#Añadir"/>
+        <Button fx:id="btn_actualizar" layoutX="198.0" layoutY="268.0" mnemonicParsing="false" text="Actualizar" onAction="#Actualizar"/>
+        <Button fx:id="btn_buscar" layoutX="291.0" layoutY="268.0" mnemonicParsing="false" text="Buscar" onAction="#Buscar"/>
+        <Button fx:id="btn_eliminar" layoutX="368.0" layoutY="268.0" mnemonicParsing="false" text="Eliminar" onAction="#Eliminar"/>
+        <Button fx:id="btn_limpiar" layoutX="448.0" layoutY="268.0" mnemonicParsing="false" text="Limpiar" onAction="#eliminarDatos"/>
+        <TableView fx:id="tabla_mostrar" layoutX="132.0" layoutY="324.0" prefHeight="200.0" prefWidth="517.0">
+            <columns>
+                <TableColumn fx:id="t_id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="t_nombre" prefWidth="75.0" text="Nombre" />
+                <TableColumn fx:id="t_pais" prefWidth="75.0" text="Pais" />
+                <TableColumn fx:id="t_nacimiento" prefWidth="75.0" text="Nacimiento" />
+                <TableColumn fx:id="t_fallecimiento" prefWidth="89.0" text="Fallecimiento" />
+                <TableColumn fx:id="t_invento" prefWidth="127.0" text="Invento Principal" />
+            </columns>
+        </TableView>
+    </children>
+</Pane>
